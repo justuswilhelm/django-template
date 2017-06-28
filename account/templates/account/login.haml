@@ -6,9 +6,7 @@
   - trans "Login"
 
 - block buttons
-  %button.btn.btn-success{type: "submit"}
+  %button{type: "submit"}
     - trans "Login"
-    %i.fa.fa-sign-in
-  %a.btn.btn-primary{href: "{% url 'account:password_reset' %}"}
+  %a{href: "{% url 'account:password_reset' %}"}
     - trans "Forgotten Password"
-    %i.fa.fa-question

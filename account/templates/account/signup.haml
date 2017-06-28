@@ -6,9 +6,7 @@
   - trans "Register"
 
 - block buttons
-  %button.btn.btn-success{type: "submit"}
+  %button{type: "submit"}
     - trans "Signup"
-    %i.fa.fa-certificate
-  %a.btn.btn-primary{href: "{% url 'account:login' %}"}
+  %a{href: "{% url 'account:login' %}"}
     - trans "Login"
-    %i.fa.fa-sign-in
