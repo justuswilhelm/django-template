@@ -1,1 +1,1 @@
-"""Project management commands."""
+"""Django_template management commands."""

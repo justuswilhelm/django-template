@@ -1,4 +1,4 @@
-"""Project view tests."""
+"""Django_template view tests."""
 import pytest
 from django.urls import reverse
 
