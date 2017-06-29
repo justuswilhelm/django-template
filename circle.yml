@@ -38,7 +38,7 @@ jobs:
           command: mypy .
       - run:
           name: Run pytest
-          command: pytest --cov --junit-xml=test-results/pytest.xml
+          command: pytest --junit-xml=test-results/pytest.xml
       - run:
           name: Export coverage results
           command: coverage html -d test-artifacts/coverage

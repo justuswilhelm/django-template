@@ -66,11 +66,7 @@ class UserProfileForm(forms.ModelForm):
 
 
 class AuthenticationForm(auth_forms.AuthenticationForm):
-    """Override AuthenticationForm, username->email."""
-
-    def __init__(self, *args, **kwargs):
-        """Change label of username identifier field."""
-        super().__init__(*args, **kwargs)
+    """Override AuthenticationForm."""
 
 
 class PasswordResetForm(auth_forms.PasswordResetForm):

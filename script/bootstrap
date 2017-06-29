@@ -2,6 +2,7 @@
 set -e
 ENV_FILE=".env"
 ENV_FILE_TEMPLATE=".env.template"
+DB="django_template"
 
 if [ -z "$CI" ] && [ ! -f "$ENV_FILE" ]
 then
@@ -12,9 +13,9 @@ fi
 
 if [ -z "$CI" ]
 then
-    dropdb "project"
-    createdb "project"
+    dropdb "django_template" || echo "Database does not yet exist"
+    createdb "django_template"
 fi
 
-foreman run ./manage.py migrate || ./manage.py migrate
-foreman run ./manage.py seeddb || ./manage.py seeddb
+./manage.py migrate
+./manage.py seeddb

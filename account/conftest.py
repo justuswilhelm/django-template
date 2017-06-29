@@ -9,17 +9,23 @@ User = get_user_model()
 
 
 @pytest.fixture
+def password():
+    """Return password."""
+    return 'password'
+
+
+@pytest.fixture
 def user():
     """Build user."""
     return User()
 
 
 @pytest.fixture
-def user_credentials():
+def user_credentials(password):
     """Valid user credentials."""
     return {
         'email': 'user@example.com',
-        'password': 'password',
+        'password': password
     }
 
 
