@@ -1,4 +1,4 @@
-"""Settings for this project."""
+"""Settings for this django_template."""
 from os import path
 
 from dj_database_url import config
@@ -35,7 +35,6 @@ FIRST_PARTY_APPS = (
     "common",
     "dashboard",
     "landing",
-    "project",
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + FIRST_PARTY_APPS
@@ -53,10 +52,10 @@ MIDDLEWARE_CLASSES = (
 )
 
 # URL
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'django_template.urls'
 
 # WSGI
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'django_template.wsgi.application'
 
 # Tempates
 TEMPLATES = [

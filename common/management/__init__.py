@@ -1,1 +1,1 @@
-"""Project management."""
+"""Django_template management."""

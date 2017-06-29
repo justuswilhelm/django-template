@@ -1,4 +1,4 @@
-"""URLs for project."""
+"""URLs for django_template."""
 from django.conf.urls import (
     include,
     url,
